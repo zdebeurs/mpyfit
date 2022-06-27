@@ -12,8 +12,7 @@ except ImportError:
 
 
 ext_modules = []
-if (any('--' + opt in sys.argv for opt in Distribution.display_option_names +
-       ['help-commands', 'help']) or sys.argv[1] in ('egg_info', 'clean')):
+if (any('--' + opt in sys.argv for opt in Distribution.display_option_names + ['help-commands', 'help']) or sys.argv[1] in ('egg_info', 'clean')):
     pass
 else:
     import numpy
